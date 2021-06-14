@@ -18,6 +18,11 @@ typedef struct RGB
     unsigned char channels[3];
 } RGB;
 
+typedef struct HSV
+{
+    long double channels[3];    //  Range: 0 <= H < 360, 0 <= S <= 1, 0 <= V <= 255
+}HSV;
+
 typedef struct BMPIMAGE
 {
     char FILENAME[MAX_PATH];
@@ -34,3 +39,11 @@ typedef struct RGBIMAGE
     unsigned int YSIZE;
     RGB *IMAGE_DATA;
 } RGBIMAGE;
+
+typedef struct HSVIMAGE
+{
+    unsigned int XSIZE;
+    unsigned int YSIZE;
+    HSV *IMAGE_DATA;
+} HSVIMAGE;
+
