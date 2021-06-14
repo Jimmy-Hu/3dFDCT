@@ -1,5 +1,8 @@
 /* Develop by Jimmy Hu */
 
+#ifndef BASE_H
+#define BASE_H
+
 #include <math.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -47,3 +50,4 @@ typedef struct HSVIMAGE
     HSV *IMAGE_DATA;
 } HSVIMAGE;
 
+#endif
