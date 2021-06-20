@@ -64,6 +64,12 @@ MONOIMAGE GetPlaneB(const RGBIMAGE image)
     return output;
 }
 
+void DeleteRGBImage(RGBIMAGE image)
+{
+    free(image.IMAGE_DATA);
+    return;
+}
+
 size_t GetMonoImageIndex(const size_t x, const size_t y, const MONOIMAGE image)
 {
     return y * image.XSIZE + x;
