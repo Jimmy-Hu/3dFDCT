@@ -8,6 +8,12 @@ MONOIMAGE CreateMonoImage(const unsigned int sizex, const unsigned int sizey)
     output.XSIZE = sizex;
     output.YSIZE = sizey;
     output.IMAGE_DATA = malloc(sizeof *output.IMAGE_DATA * sizex * sizey);
+    if(output.IMAGE_DATA == NULL)
+    {    
+        printf(stderr, "Memory allocation error!");
+        return output;
+    }
+    return output;
 }
 
 void DeleteMonoImage(MONOIMAGE image)
