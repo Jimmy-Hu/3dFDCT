@@ -57,5 +57,11 @@ typedef struct MONOIMAGE
     unsigned char *IMAGE_DATA;
 } MONOIMAGE;
 
+typedef struct DOUBLEIMAGE
+{
+    unsigned int XSIZE;
+    unsigned int YSIZE;
+    double *IMAGE_DATA;
+};
 
 #endif
