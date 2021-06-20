@@ -50,4 +50,12 @@ typedef struct HSVIMAGE
     HSV *IMAGE_DATA;
 } HSVIMAGE;
 
+typedef struct MONOIMAGE
+{
+    unsigned int XSIZE;
+    unsigned int YSIZE;
+    unsigned char *IMAGE_DATA;
+} MONOIMAGE;
+
+
 #endif
